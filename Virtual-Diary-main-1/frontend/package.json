@@ -1,0 +1,19 @@
+{
+  "name": "virtual-diary",
+  "version": "1.0.0",
+  "description": "Offline full-stack virtual diary using Flask and Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "concurrently \"npm run electron\" \"npm run flask\"",
+    "electron": "electron .",
+    "flask": "cd ../backend && flask run"
+  },
+  "keywords": [],
+  "author": "shiva",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^35.1.3"
+  }
+}
